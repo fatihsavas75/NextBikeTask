@@ -1,0 +1,419 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1606171174,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I send a GET request to Frankfurt endpoint",
+            "match": {
+              "location": "FrankfurtSteps.iSendAGETRequestToFrankfurtEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2132269,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "FrankfurtSteps.statusCodeShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-04T12:21:36.758Z",
+        "line": 10,
+        "name": "Checking available stations",
+        "description": "",
+        "id": "frankfurt-feature;checking-available-stations",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 62868307,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "following hubs should be available",
+            "match": {
+              "location": "FrankfurtSteps.followingHubsShouldBeAvailable(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Hauptwache",
+                  "Fressgasse / Neue Mainzer Str.",
+                  "Friedberger Platz / Café Harveys"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 84312500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I send a GET request to Frankfurt endpoint",
+            "match": {
+              "location": "FrankfurtSteps.iSendAGETRequestToFrankfurtEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 424700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "FrankfurtSteps.statusCodeShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-04T12:21:38.462Z",
+        "line": 21,
+        "name": "Checking stations info",
+        "description": "",
+        "id": "frankfurt-feature;checking-stations-info;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 76141826,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "following \"Hauptwache\" should have following \"fb84608abfd17c82a4e00d406fa6193f\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hauptwache\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"fb84608abfd17c82a4e00d406fa6193f\"",
+                  "offset": 45
+                }
+              ],
+              "location": "FrankfurtSteps.followingShouldHaveFollowing(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 93150153,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I send a GET request to Frankfurt endpoint",
+            "match": {
+              "location": "FrankfurtSteps.iSendAGETRequestToFrankfurtEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 365394,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "FrankfurtSteps.statusCodeShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-04T12:21:38.627Z",
+        "line": 22,
+        "name": "Checking stations info",
+        "description": "",
+        "id": "frankfurt-feature;checking-stations-info;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 67270062,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "following \"Fressgasse / Neue Mainzer Str.\" should have following \"93d295d2c1da4aa73398c30e60917df6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fressgasse / Neue Mainzer Str.\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"93d295d2c1da4aa73398c30e60917df6\"",
+                  "offset": 65
+                }
+              ],
+              "location": "FrankfurtSteps.followingShouldHaveFollowing(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 104654119,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I send a GET request to Frankfurt endpoint",
+            "match": {
+              "location": "FrankfurtSteps.iSendAGETRequestToFrankfurtEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 314859,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "FrankfurtSteps.statusCodeShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-04T12:21:38.789Z",
+        "line": 23,
+        "name": "Checking stations info",
+        "description": "",
+        "id": "frankfurt-feature;checking-stations-info;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 43819306,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "following \"Friedberger Platz / Café Harveys\" should have following \"5313c629cc501e6b70f039f2c82593e9\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Friedberger Platz / Café Harveys\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"5313c629cc501e6b70f039f2c82593e9\"",
+                  "offset": 67
+                }
+              ],
+              "location": "FrankfurtSteps.followingShouldHaveFollowing(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Frankfurt Feature",
+    "description": "",
+    "id": "frankfurt-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Frankfurt.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-04T12:21:38.939Z",
+        "line": 5,
+        "name": "",
+        "description": "",
+        "id": "verify-frankfurt-info;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 342034559,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I send a GET request to networks",
+            "match": {
+              "location": "NetworksSteps.iSendAGETRequestToNetworks()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 304433,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "NetworksSteps.statusCodeShouldBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 715781,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Frankfurt should be in Germany",
+            "match": {
+              "location": "NetworksSteps.frankfurtShouldBeInGermany()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 52371502,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be  able get location info",
+            "match": {
+              "location": "NetworksSteps.iShouldBeAbleGetLocationInfo()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Frankfurt Info",
+    "description": "",
+    "id": "verify-frankfurt-info",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Networks.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
